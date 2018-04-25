@@ -62,7 +62,8 @@ function getDefaultModules() {
 
 module.exports = {
   srcPath: srcPath,
-  publicPath: '/assets/',
+  // publicPath: './assets/',
+  publicPath: path.join(__dirname, 'assets'),
   port: dfltPort,
   getDefaultModules: getDefaultModules
 };
